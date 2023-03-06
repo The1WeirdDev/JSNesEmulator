@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Nes Emulator</title>
+        <link rel="stylesheet" type="text/css" href="Client/Style.css">
+        <p id="sus"></p>
+        <p id="sus1"></p>
+        <p id="sus2"></p>
+        
+        <input type='file' accept='*' onchange='OnLoadRomPressed(event)'><br>
+        <img id='output'>
+        
+        <button id="loadrombutton" type="button" onclick="OnLoadRomPressed()">LoadRom</button>
+        
+        <button id="button1" type="button" onclick="OnButton1Pressed()">Stop</button>
+        <button id="button2" class="HideClass" type="button" onclick="Clock();">Clock</button>
+
+        <div id="instructed" style="overflow-y:scroll; background-color:red; max-height:300px; max-width:300px; text-align: left;">
+            
+        </div>
+    </head>
+    
+    <body>
+        <script src="Client/Scripts/Integers.js"></script>
+        <script src="Client/Scripts/Cpu.js"></script>
+        <script src="Client/Scripts/CpuInstructor.js"></script>
+        <script src="Client/Scripts/Input.js"></script>
+        <script src="Client/Scripts/Display.js"></script>
+        
+        <script src="Client/Scripts/Main.js"></script>
+    </body>
+</html>
